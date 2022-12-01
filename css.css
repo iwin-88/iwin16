@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slide-progress {
+    width: 0;
+    max-width: 100%;
+}
+.blog-1 .main-box .col-span-4 .box .images img,
+.blog-2 .main-box .col-span-3 .box .images img{
+    transition: transform 0.3s;
+}
+.blog-1 .main-box .col-span-4 .box .images img:hover,
+.blog-2 .main-box .col-span-3 .box .images img:hover{
+    transform: scale(1.1);
+}
+.blog-1 .main-box .col-span-4 .box,
+.blog-2 .main-box .col-span-3 .box{
+    -webkit-animation: glow 2s infinite;
+    -moz-animation: glow 2s infinite;
+    -o-animation: glow 2s infinite;
+    animation: glow 2s infinite;
+}
+@keyframes glow {
+    0% {
+        -webkit-box-shadow: 0 0 4px #ff0000;
+    }
+    50% {
+        -webkit-box-shadow: 0 0 10px #ff0000;
+    }
+    100% {
+        -webkit-box-shadow: 0 0 4px #ff0000;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    header .main-box{
+        width: 100%;
+        padding: 5px !important;
+    }
+    header .main-box .link{
+        display: none;
+    }
+    header .main-box .open-menu{
+        display: block !important;
+    }
+    header nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fff !important;
+        width: 0%;
+        height: 100%;
+        z-index: 200;
+        transition: 0.2s;
+        overflow-x: hidden;
+    }
+    header nav .menu .close-menu{
+        display: block !important;
+    }
+    header nav .menu ul li{
+        width: 100%;
+    }
+    header nav .menu ul li a{
+        color: #000000;
+    }
+    .blog-text{
+        width: 100%;
+        padding: 5px !important;
+    }
+    .blog-text h1{
+        font-size: 20px;
+        text-align: center;
+        padding: 0px !important;
+    }
+    .blog-text p{
+        font-size: 14px;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .blog-1 h1,
+    .blog-2 h1{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        padding: 0px !important;
+    }
+    .blog-1 h1 hr,
+    .blog-1 h1 span,
+    .blog-2 h1 hr,
+    .blog-2 h1 span{
+        width: 100%;
+    }
+    .blog-1 .main-box,
+    .blog-2 .main-box{
+        display: inline-block;
+        width: 100%;
+    }
+    .blog-1 .main-box .col-span-4{
+        width: 50%;
+        float: left;
+        padding: 2px;
+    }
+    .blog-2 .main-box .col-span-3{
+        width: 33.3%;
+        float: left;
+        padding: 2px;
+    }
+
+    .link-download{
+        width: 100%;
+    }
+    .link-download .main-box{
+        width: 100%;
+        display: inline-block;
+    }
+    .link-download .main-box .box{
+        width: 50%;
+        float: left;
+    }
+    footer .main-box{
+        width: 100%;
+    }
+    footer .main-box .grid{
+        width: 100%;
+        display: inline-block;
+    }
+    footer .main-box .grid .col-span-3 h1{
+        text-align: center;
+    }
+    footer .main-box .grid .col-span-3 ul li{
+        text-align: center;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    header .main-box{
+        width: 100%;
+        padding: 5px !important;
+    }
+    header .main-box .link{
+        display: none;
+    }
+    header .main-box .open-menu{
+        display: block !important;
+    }
+    header nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #fff !important;
+        width: 0%;
+        height: 100%;
+        z-index: 200;
+        transition: 0.2s;
+        overflow-x: hidden;
+    }
+    header nav .menu .close-menu{
+        display: block !important;
+    }
+    header nav .menu ul li{
+        width: 100%;
+    }
+    header nav .menu ul li a{
+        color: #000000;
+    }
+    .blog-text{
+        width: 100%;
+        padding: 5px !important;
+    }
+    .blog-text h1{
+        font-size: 22px;
+        text-align: center;
+        padding: 0px !important;
+    }
+    .blog-text p{
+        font-size: 14px;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .blog-1 h1,
+    .blog-2 h1{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        padding: 0px !important;
+    }
+    .blog-1 h1 hr,
+    .blog-1 h1 span,
+    .blog-2 h1 hr,
+    .blog-2 h1 span{
+        width: 100%;
+    }
+    .blog-1 .main-box,
+    .blog-2 .main-box{
+        display: inline-block;
+        width: 100%;
+    }
+    .blog-1 .main-box .col-span-4{
+        width: 33.3%;
+        float: left;
+        padding: 2px;
+    }
+    .blog-2 .main-box .col-span-3{
+        width: 20%;
+        float: left;
+        padding: 2px;
+    }
+
+    .link-download{
+        width: 100%;
+    }
+    .link-download .main-box{
+        width: 100%;
+        display: inline-block;
+    }
+    .link-download .main-box .box{
+        width: 25%;
+        float: left;
+    }
+    footer .main-box{
+        width: 100%;
+    }
+    footer .main-box .grid{
+        width: 100%;
+        display: inline-block;
+    }
+    footer .main-box .grid .col-span-9{
+        width: 65%;
+        float: left;
+        padding: 2px;
+    }
+    footer .main-box .grid .col-span-3{
+        width: 35%;
+        float: left;
+        padding: 2px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    header nav .menu ul li a{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .blog-text{
+        padding: 5px !important;
+    }
+    .blog-1,
+    .blog-2{
+        padding: 5px !important;
+    }
+    .link-download{
+        width: 100%;
+    }
+    .link-download .main-box{
+        width: 100%;
+        display: inline-block;
+    }
+    .link-download .main-box .box{
+        width: 25%;
+        float: left;
+    }
+
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+}
